@@ -9,8 +9,8 @@
 
     <Grid Background="Gray" >
         <TextBox x:Name="entryBar" Margin="0,5,1142,0" TextWrapping="Wrap" Text="" FontSize="20" HorizontalAlignment="Right" Width="201" Height="42" VerticalAlignment="Top" />
-        <StackPanel x:Name="holder" HorizontalAlignment="Left" Height="721" Margin="0,47,0,0" VerticalAlignment="Top" Width="487"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="Auto" Margin="241,7,0,0" VerticalAlignment="Top" Width="Auto" Click="Button_Click"/>
+        <StackPanel x:Name="holder"  Height="689" Margin="10,69,1142,0" VerticalAlignment="Top"/>
+        <Button Content="Enter" HorizontalAlignment="Left" Height="Auto" Margin="241,7,0,0" VerticalAlignment="Top" Width="Auto" Click="Button_Click"/>
 
     </Grid>
 </Page>

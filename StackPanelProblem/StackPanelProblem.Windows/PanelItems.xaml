@@ -7,10 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     d:DesignHeight="50"
-    d:DesignWidth="300">
+    d:DesignWidth="200">
 
     <Grid x:Name="grid" x:FieldModifier="Public">
-        <TextBlock  x:Name="name" x:FieldModifier="Public" Height="Auto" Margin="120,17,134,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="Auto"/>
-
+        <TextBlock  x:Name="name" x:FieldModifier="Public" TextWrapping="Wrap" Height="Auto" Text="Opeyemi" Width="Auto" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,18,87,18"/>
     </Grid>
 </UserControl>

@@ -33,7 +33,8 @@ namespace StackPanelProblem
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             input = entryBar.Text.Split(',');
-            PanelItems rect = new PanelItems() {Width=holder.ActualWidth,Height=30 };
+            PanelItems rect = new PanelItems() {Width=holder.ActualWidth,Height=50 };
+           
             switch (input[0].ToLower())
             {
                 case "red":
@@ -49,7 +50,9 @@ namespace StackPanelProblem
                     rect.name.Text = input[1];
                     break;
             }
+            entryBar.Text = "";
             holder.Children.Add(rect);
+
             
         }
     }
