@@ -19,9 +19,11 @@ namespace StackPanelProblem
 {
     public sealed partial class PanelItems : UserControl
     {
-        public PanelItems()
+        public PanelItems(Brush color,string text)
         {
             this.InitializeComponent();
+            grid.Background = color;
+            this.name.Text = text;
         }
     }
 }

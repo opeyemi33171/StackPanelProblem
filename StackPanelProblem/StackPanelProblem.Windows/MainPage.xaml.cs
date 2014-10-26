@@ -33,27 +33,31 @@ namespace StackPanelProblem
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             input = entryBar.Text.Split(',');
-            PanelItems rect = new PanelItems() {Width=holder.ActualWidth,Height=50 };
-           
+            PanelItems rect;
             switch (input[0].ToLower())
             {
                 case "red":
-                    rect.grid.Background= new SolidColorBrush(Colors.Red);
-                    rect.name.Text = input[1];
+                    rect = new PanelItems(new SolidColorBrush(Colors.Red), input[1]) {
+                        Width = holder.ActualWidth
+                        , Height = 50 };
+                    
                     break;
                 case "blue":
-                    rect.grid.Background = new SolidColorBrush(Colors.Blue);
-                    rect.name.Text = input[1];
+                    rect = new PanelItems(new SolidColorBrush(Colors.Blue), input[1]) {
+                        Width = holder.ActualWidth, 
+                        Height = 50 };
                     break;
                 case "green":
-                    rect.grid.Background = new SolidColorBrush(Colors.Green);
-                    rect.name.Text = input[1];
+                    rect = new PanelItems(new SolidColorBrush(Colors.Green), input[1]) { 
+                        Width = holder.ActualWidth, 
+                        Height = 50 };
+                    break;
+                default:
+                    rect = new PanelItems(new SolidColorBrush(Colors.Purple), input[1]);
                     break;
             }
             entryBar.Text = "";
             holder.Children.Add(rect);
-
-            
         }
     }
 }
