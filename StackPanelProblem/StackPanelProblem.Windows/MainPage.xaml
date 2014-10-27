@@ -8,10 +8,9 @@
     mc:Ignorable="d" Width="1365.705">
 
     <Grid Background="Gray" >
-        <TextBox x:Name="entryBar" Margin="0,20,1155,0" TextWrapping="Wrap" Text="" FontSize="20" HorizontalAlignment="Right" Width="201" Height="37" VerticalAlignment="Top" />
+        <TextBox x:Name="entryBar" Margin="0,20,1155,0" TextWrapping="Wrap" Text="" FontSize="20" HorizontalAlignment="Right" Width="201" Height="37" VerticalAlignment="Top"  KeyDown="entryBar_KeyDown" />
         <StackPanel x:Name="holder"  Height="689" Margin="10,69,1155,0" VerticalAlignment="Top">
         </StackPanel>
-        <Button Content="Enter" HorizontalAlignment="Left" Height="Auto" Margin="234,17,0,0" VerticalAlignment="Top" Width="Auto" Click="Button_Click"/>
 
     </Grid>
 </Page>
