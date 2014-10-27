@@ -39,18 +39,18 @@ namespace StackPanelProblem
                 case "red":
                     rect = new PanelItems(new SolidColorBrush(Colors.Red), input[1]) {
                         Width = holder.ActualWidth
-                        , Height = 50 };
+                        , Height = 45 };
                     
                     break;
                 case "blue":
                     rect = new PanelItems(new SolidColorBrush(Colors.Blue), input[1]) {
                         Width = holder.ActualWidth, 
-                        Height = 50 };
+                        Height = 45 };
                     break;
                 case "green":
                     rect = new PanelItems(new SolidColorBrush(Colors.Green), input[1]) { 
                         Width = holder.ActualWidth, 
-                        Height = 50 };
+                        Height = 45 };
                     break;
                 default:
                     rect = new PanelItems(new SolidColorBrush(Colors.Purple), input[1]);
